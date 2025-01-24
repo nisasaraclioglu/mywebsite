@@ -81,17 +81,21 @@
       border-radius: 50%; /* Daire şeklinde yapmak için */
     }
     .projects-container {
+      margin: 20px auto;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 20px;
+      flex-wrap: nowrap; /* Kartların tek satırda kalmasını sağlar */
+      overflow-x: auto; /* Yatay kaydırma çubuğunu ekler */
+      gap: 20px; /* Kartlar arası boşluk */
+      padding-bottom: 10px; /* Kaydırma çubuğu ile içerik arasında boşluk */
+      scrollbar-width: thin; /* Modern tarayıcılarda ince kaydırma çubuğu */
     }
     .project-card {
       background-color: #EBE6F4;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       width: 200px;
+      min-width: 200px; /* Minimum genişliği tanımlar (isteğe bağlı) */
+      max-width: 200px;
       padding: 15px;
       border: 1px solid #D8B3F0; /* Hafif kenar çizgisi */
       text-align: center;
@@ -139,12 +143,27 @@
       <div class="project-card">
         <img src="images\treasurecollector.png" alt="Project 1">
         <p>TreasureCollector</p>
-        <a href="https://github.com/kullaniciadi/projem1" target="_blank">View Project</a>
+        <a href="https://github.com/nisasaraclioglu/TreasureCollector" target="_blank">View Project</a>
       </div>
       <div class="project-card">
         <img src="https://via.placeholder.com/200" alt="Project 2">
-        <p>Web Tabanlı Uygulama</p>
-        <a href="https://github.com/kullaniciadi/projem2" target="_blank">View Project</a>
+        <p>RecipeBook</p>
+        <a href="https://github.com/nisasaraclioglu/RecipeBook" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/200" alt="Project 3">
+        <p>EventPlanner</p>
+        <a href="https://github.com/nisasaraclioglu/EventPlanner" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/200" alt="Project 4">
+        <p>AppointmentSystem</p>
+        <a href="https://github.com/nisasaraclioglu/AppointmentSystem" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/200" alt="Project 5">
+        <p>OrderSystem</p>
+        <a href="https://github.com/nisasaraclioglu/OrderSystem" target="_blank">View Project</a>
       </div>
     </div>
   </section>
