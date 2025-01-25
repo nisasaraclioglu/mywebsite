@@ -55,7 +55,7 @@
     section {
       padding: 50px 20px;
       margin: 50px 0;
-      max-width: 800px; /* Maksimum genişlik */
+      max-width: 1000px; /* Maksimum genişlik */
       margin: 0 auto;
       text-align: center; /* Metni ortala */
     }
@@ -115,6 +115,23 @@
     .project-card a:hover {
       text-decoration: underline;
     }
+    .hobbies-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    .hobby-card {
+      border-radius: 10px;
+      width: 150px;
+      padding: 15px;
+      text-align: center;
+    }
+    .hobby-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
 </style>
 </head>
 <body>
@@ -134,7 +151,11 @@
   <img src="images\foto.jpeg" alt="Header Image" class="header-image">
   <section id="about">
     <h2>Who am I?</h2>
-    <p>Hello! I am Nisa. I am studying Computer Engineering at Kocaeli University. I work on backend development using Python, Java, and C#, while also creating frontend designs with HTML, CSS, and JavaScript. For now, I haven't decided on a specific focus area in programming, but I am also improving myself in cybersecurity. Additionally, due to my interest in artificial intelligence, I am taking new steps in this field.</p>
+    <p>Hello! I’m Nisa. I discovered my interest in software during middle school, which led me to pursue a degree in Computer Engineering. I’m currently a third-year Computer Engineering student at Kocaeli University.
+
+      As I delved deeper into the world of software, I started enjoying exploring different fields. I’ve worked on projects in backend and frontend development, gaining valuable experience in these areas. Additionally, cybersecurity has recently caught my interest, and I’ve started receiving cybersecurity training as part of a school team. I’m continuously working on improving myself in this field. Moreover, I’ve developed an interest in artificial intelligence, and although I’m still new to it, I plan to advance in this area as well.
+      
+      I love working with computers, exploring technology, and creating tangible projects. I believe I can combine everything I’ve learned from different fields to produce innovative and impactful work.</p>
   </section>
 
   <section id="projects">
@@ -143,27 +164,27 @@
       <div class="project-card">
         <img src="images\treasurecollector.png" alt="Project 1">
         <p>TreasureCollector</p>
-        <a href="https://github.com/nisasaraclioglu/TreasureCollector" target="_blank">View Project</a>
+        <a href="https://github.com/nisasaraclioglu/TreasureCollector" target="_blank">GitHub Link</a>
       </div>
       <div class="project-card">
-        <img src="https://via.placeholder.com/200" alt="Project 2">
+        <img src="images/recipebook.png" alt="Project 2">
         <p>RecipeBook</p>
-        <a href="https://github.com/nisasaraclioglu/RecipeBook" target="_blank">View Project</a>
+        <a href="https://github.com/nisasaraclioglu/RecipeBook" target="_blank">GitHub Link</a>
       </div>
       <div class="project-card">
-        <img src="https://via.placeholder.com/200" alt="Project 3">
+        <img src="images/eventplanner.png" alt="Project 3">
         <p>EventPlanner</p>
-        <a href="https://github.com/nisasaraclioglu/EventPlanner" target="_blank">View Project</a>
+        <a href="https://github.com/nisasaraclioglu/EventPlanner" target="_blank">GitHub Link</a>
       </div>
       <div class="project-card">
         <img src="https://via.placeholder.com/200" alt="Project 4">
         <p>AppointmentSystem</p>
-        <a href="https://github.com/nisasaraclioglu/AppointmentSystem" target="_blank">View Project</a>
+        <a href="https://github.com/nisasaraclioglu/AppointmentSystem" target="_blank">GitHub Link</a>
       </div>
       <div class="project-card">
-        <img src="https://via.placeholder.com/200" alt="Project 5">
+        <img src="images/ordersystem.png" alt="Project 5">
         <p>OrderSystem</p>
-        <a href="https://github.com/nisasaraclioglu/OrderSystem" target="_blank">View Project</a>
+        <a href="https://github.com/nisasaraclioglu/OrderSystem" target="_blank">GitHub Link</a>
       </div>
     </div>
   </section>
@@ -175,13 +196,23 @@
 
   <section id="hobbies">
     <h2>Hobbies</h2>
-    <p>- Reading<br>- Coding<br>- Video Games</p>
+    <div class="hobbies-container">
+      <div class="hobby-card">
+        <img src="images\reading.png" alt="Reading">
+      </div>
+      <div class="hobby-card">
+        <img src="images\videogames.png" alt="Video Games">
+      </div>
+      <div class="hobby-card">
+        <img src="images\travel.png" alt="Travel">
+      </div>
+    </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
     <p>E-mail: <a href="mailto:ornek@mail.com">hayrunnisaraclioglu@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/kullaniciadi/" target="_blank">Profilimi Görüntüle</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/hayrunnisa-saraçlıoğlu/" target="_blank">Profilimi Görüntüle</a></p>
   </section>
 </main>
 
