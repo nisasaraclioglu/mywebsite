@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', sans-serif;
+    background-color: #EBE6F4;
+    text-align: center;
+    color: #310442;
+    scroll-behavior: smooth;
+    padding-top: 140px; /* Sayfa içeriği ile kenar arası boşluk */
+  }
+  header {
+    background-color: #D8B3F0;
+    color: #310442;
+    padding: 10px 20px;
+    position: fixed;
+    opacity: 0.9;
+    top: 20px; /* Header kaydırmada sabit kalır */
+    width: 80%; /* Barın genişliği */
+    margin: 0 auto; /* Üstte 20px boşluk bırakır */
+    height: 70px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 35px; /* Tüm kenarları oval yapar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge ekler */
+    left: 50%; /* Sayfanın ortasına hizala */
+    transform: translateX(-50%); /* Sol kenardan ortala */
+  }
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  nav {
+    display: flex;
+    gap: 15px;
+  }
+  nav a {
+    color: #310442;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  section {
+    padding: 50px 20px;
+    margin: 50px 0;
+    max-width: 1000px; /* Maksimum genişlik */
+    margin: 0 auto;
+    text-align: center; /* Metni ortala */
+  }
+  p {
+    line-height: 1.6; /* Daha iyi okunabilirlik için satır aralığı */
+  }
+  h2 {
+  border-bottom: 2px solid #310442;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  white-space: nowrap; /* Metni tek satırda tutar */
+  display: inline-block; /* Başlığı ve çizgiyi hizalamak için inline-block yapar */
+  margin: 0 auto; /* Başlığı ve çizgiyi ortalar */
+  }
+  html {
+    scroll-padding-top: 70px; /* Header yüksekliği + margin için boşluk */
+  }
+  .header-image {
+    width: 250px;
+    height: 250px;
+    margin: 10px auto;
+    border-radius: 50%; /* Daire şeklinde yapmak için */
+  }
+  .projects-container {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: nowrap; /* Kartların tek satırda kalmasını sağlar */
+    overflow-x: auto; /* Yatay kaydırma çubuğunu ekler */
+    gap: 20px; /* Kartlar arası boşluk */
+    padding-bottom: 10px; /* Kaydırma çubuğu ile içerik arasında boşluk */
+    scrollbar-width: thin; /* Modern tarayıcılarda ince kaydırma çubuğu */
+  }
+  .project-card {
+    background-color: #EBE6F4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    min-width: 200px; /* Minimum genişliği tanımlar (isteğe bağlı) */
+    max-width: 200px;
+    padding: 15px;
+    border: 1px solid #D8B3F0; /* Hafif kenar çizgisi */
+    text-align: center;
+    color: #310442;
+  }
+  .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .project-card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #310442;
+  }
+  .project-card a:hover {
+    text-decoration: underline;
+  }
+  .hobbies-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  .hobby-card {
+    border-radius: 10px;
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+  }
+  .hobby-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .skills-container {
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  .skill-icon {
+  width: 100px; /* Görsellerin genişliği */
+  height: 100px; /* Görsellerin yüksekliği */
+  object-fit: contain; /* Görsellerin orantılı şekilde küçülmesini sağlar */
+  display: inline-block; /* Simgelerin hizalanmasını düzenler */
+  margin: 10px; /* Görseller arası boşluk */
+}
